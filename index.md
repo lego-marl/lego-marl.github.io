@@ -2,15 +2,15 @@
 layout: project_page
 permalink: /
 
-title: Local-Canonicalization Equivariant Graph Neural Networks for Sample-Efficient and Generalizable Swarm Robot Control
+title: "LEGO: Local-Canonicalization Equivariant Graph Neural Networks for Sample-Efficient and Generalizable Swarm Robot Control"
 conference: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2026
 authors:
-    Keqin Wang$^*$, Tao Zhong$^*$, David Chang, Christine Allen-Blanchette
+    Keqin Wang$^*$, <a href="https://taozhong.info/">Tao Zhong</a>$^*$, David Chang, <a href="https://cablanc.github.io/">Christine Allen-Blanchette</a>
 affiliations:
     Princeton University <br> <small>$^*$Equal contribution</small>
 paper: https://arxiv.org/abs/2509.14431
 video: https://arxiv.org/abs/2509.14431 # TODO: placeholder — replace with real video
-# code: https://github.com/CAB-Lab-Princeton/LEGO-MARL  # TODO: un-hide once the repo is public
+code: https://github.com/CAB-Lab-Princeton/LEGO-MARL
 # data: # TODO: add dataset link if released
 ---
 
