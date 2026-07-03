@@ -7,10 +7,10 @@ conference: IEEE/RSJ International Conference on Intelligent Robots and Systems 
 authors:
     Keqin Wang$^*$, Tao Zhong$^*$, David Chang, Christine Allen-Blanchette
 affiliations:
-    Princeton University
+    Princeton University <br> <small>$^*$Equal contribution</small>
 paper: https://arxiv.org/abs/2509.14431
-# video: # TODO: add video link later
-# code: # TODO: add code repo link if/when released
+video: https://arxiv.org/abs/2509.14431 # TODO: placeholder — replace with real video
+code: https://github.com/CAB-Lab-Princeton/LEGO-MARL
 # data: # TODO: add dataset link if released
 ---
 
