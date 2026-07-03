@@ -10,7 +10,7 @@ affiliations:
     Princeton University <br> <small>$^*$Equal contribution</small>
 paper: https://arxiv.org/abs/2509.14431
 video: https://arxiv.org/abs/2509.14431 # TODO: placeholder — replace with real video
-code: https://github.com/CAB-Lab-Princeton/LEGO-MARL
+# code: https://github.com/CAB-Lab-Princeton/LEGO-MARL  # TODO: un-hide once the repo is public
 # data: # TODO: add dataset link if released
 ---
 
