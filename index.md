@@ -3,10 +3,11 @@ layout: project_page
 permalink: /
 
 title: Local-Canonicalization Equivariant Graph Neural Networks for Sample-Efficient and Generalizable Swarm Robot Control
+conference: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2026
 authors:
-    Keqin Wang$^{*\dagger 1}$, Tao Zhong$^{*1}$, David Chang$^{1}$, Christine Allen-Blanchette$^{\dagger 1}$
+    Keqin Wang$^*$, Tao Zhong$^*$, David Chang, Christine Allen-Blanchette
 affiliations:
-    $^1$Princeton University <br> <small>$^*$Equal contribution&nbsp;&nbsp;·&nbsp;&nbsp;$^\dagger$Corresponding authors</small>
+    Princeton University
 paper: https://arxiv.org/abs/2509.14431
 # video: # TODO: add video link later
 # code: # TODO: add code repo link if/when released
