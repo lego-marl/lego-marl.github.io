@@ -64,12 +64,16 @@ LEGO's design philosophy is to *decouple* the system's symmetries and handle eac
 
 Because canonicalization removes $E(2)$ variation before encoding, the resulting policy is **$E(2)$-equivariant by construction**, and the graph structure makes it **permutation-equivariant** within each role.
 
-## Contributions
-
-- A novel and **modular framework, LEGO**, that synergistically integrates local canonicalization for geometric $E(n)$-equivariance, graph neural networks for permutation equivariance, and heterogeneous graphs for role-based policies.
-- Empirical demonstration that LEGO, when integrated with MAPPO, achieves **superior sample efficiency and performance** over strong baselines in both cooperative and competitive MARL tasks.
-- Rigorous validation of **generalization**: zero-shot scalability to unseen numbers of agents, and out-of-distribution generalization to novel geometric configurations.
-- **Real hardware demonstration** on Crazyflie drones, highlighting the framework's potential for real-world robotics.
+<!-- Pipeline / architecture figure -->
+<div class="columns is-centered">
+    <div class="column is-full has-text-centered">
+        <img src="/static/image/pipeline.png"
+             alt="Overview of the LEGO architecture: observations are canonicalized, decomposed into role-specific heterogeneous graphs (self, pursuers, evaders, obstacles), encoded by an MLP or stacked Graphormer layers with pooling, then combined and passed to the actor and critic MLPs.">
+        <p class="is-size-6 has-text-justified" style="max-width:900px; margin:0.9rem auto 0 auto;">
+            <b>Figure 2.</b> Overview of the LEGO architecture. Each agent's observation is first <b>canonicalized</b> to remove $E(2)$ nuisance variation. The scene is then decomposed into role-specific <b>heterogeneous graphs</b> (self, pursuers, evaders, obstacles): the self features are encoded by an MLP, while each role graph is processed by $N$ stacked <b>Graphormer</b> layers followed by pooling. The pooled role embeddings are combined and passed to the actor MLP, which outputs the (local) action distribution $a_i$, and to the critic MLP, which outputs the value $V_i$.
+        </p>
+    </div>
+</div>
 
 ## Results
 
