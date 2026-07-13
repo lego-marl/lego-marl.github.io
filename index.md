@@ -77,7 +77,65 @@ Because canonicalization removes $E(2)$ variation before encoding, the resulting
 
 ## Results
 
-- Outperforms strong baselines on cooperative and competitive swarm benchmarks (including the MPE Tag pursuer–evader task).
+### Cooperative Tasks: MPE Spread<sup>[1]</sup>
+
+Qualitative rollouts on the cooperative MPE Spread benchmark, where agents must spread out to cover all landmarks while avoiding collisions. LEGO-MAPPO is compared against MAPPO, PIC, and SEGNN at two team sizes.
+
+<div class="results-split">
+    <div class="results-group">
+        <div class="results-group-title">3 Agents, 3 Landmarks</div>
+        <div class="results-grid">
+            <div class="result-cell">
+                <img src="/figures/render_LEG-MAPPO_3agents.gif" alt="LEGO-MAPPO on MPE Spread with 3 agents and 3 landmarks">
+                <div class="result-label">LEGO-MAPPO</div>
+            </div>
+            <div class="result-cell">
+                <img src="/figures/render_MAPPO_3agent.gif" alt="MAPPO on MPE Spread with 3 agents and 3 landmarks">
+                <div class="result-label">MAPPO<sup>[2]</sup></div>
+            </div>
+            <div class="result-cell">
+                <img src="/figures/render_pic_3agent.gif" alt="PIC on MPE Spread with 3 agents and 3 landmarks">
+                <div class="result-label">PIC<sup>[3]</sup></div>
+            </div>
+            <div class="result-cell">
+                <img src="/figures/render_SEGNN_3agent.gif" alt="SEGNN on MPE Spread with 3 agents and 3 landmarks">
+                <div class="result-label">SEGNN<sup>[4]</sup></div>
+            </div>
+        </div>
+    </div>
+    <div class="results-group">
+        <div class="results-group-title">6 Agents, 6 Landmarks</div>
+        <div class="results-grid">
+            <div class="result-cell">
+                <img src="/figures/render_LEG-MAPPO_6agents.gif" alt="LEGO-MAPPO on MPE Spread with 6 agents and 6 landmarks">
+                <div class="result-label">LEGO-MAPPO</div>
+            </div>
+            <div class="result-cell">
+                <img src="/figures/render_MAPPO_6agent.gif" alt="MAPPO on MPE Spread with 6 agents and 6 landmarks">
+                <div class="result-label">MAPPO<sup>[2]</sup></div>
+            </div>
+            <div class="result-cell">
+                <img src="/figures/render_pic_6agents.gif" alt="PIC on MPE Spread with 6 agents and 6 landmarks">
+                <div class="result-label">PIC<sup>[3]</sup></div>
+            </div>
+            <div class="result-cell">
+                <img src="/figures/render_SEGNN_6agent.gif" alt="SEGNN on MPE Spread with 6 agents and 6 landmarks">
+                <div class="result-label">SEGNN<sup>[4]</sup></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="results-refs">
+    [1] Terry et al. "PettingZoo: Gym for multi-agent reinforcement learning." <i>NeurIPS</i> 2021.<br>
+    [2] Yu et al. "The Surprising Effectiveness of PPO in Cooperative, Multi-Agent Games." <i>NeurIPS</i> 2022.<br>
+    [3] Liu et al. "PIC: Permutation Invariant Critic for Multi-Agent Deep Reinforcement Learning." <i>CoRL</i> 2020.<br>
+    [4] Chen et al. "E(3)-Equivariant Actor-Critic Methods for Cooperative Multi-Agent Reinforcement Learning." <i>ICML</i> 2024.
+</div>
+
+### Other results
+
+- Outperforms strong baselines on the **competitive** MPE Tag pursuer–evader benchmark.
 - **Zero-shot** transfer to team sizes never seen during training.
 - Robustness to **agent failure** and varying team sizes in **real-world** Crazyflie drone flights.
 

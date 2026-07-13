@@ -155,3 +155,70 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+/* ---- Results: side-by-side qualitative comparison grids ---- */
+.results-split {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.results-group {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.results-group + .results-group {
+    border-left: 1px solid #dbdbdb;
+    padding-left: 2rem;
+}
+
+.results-group-title {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.1rem 0.9rem;
+}
+
+.result-cell {
+    text-align: center;
+}
+
+.result-cell img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.result-label {
+    margin-top: 0.4rem;
+    font-size: 0.92rem;
+    line-height: 1.25;
+}
+
+.results-refs {
+    margin-top: 1.4rem;
+    font-size: 0.78rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    .results-split {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .results-group + .results-group {
+        border-left: none;
+        border-top: 1px solid #dbdbdb;
+        padding-left: 0;
+        padding-top: 1.5rem;
+    }
+}
