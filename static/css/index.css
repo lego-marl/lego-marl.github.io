@@ -190,11 +190,20 @@ body {
     text-align: center;
 }
 
-.result-cell img {
+.result-cell img,
+.result-cell video {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 4px;
+}
+
+.demo-video {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 1.2rem auto 0 auto;
+    border-radius: 6px;
 }
 
 .result-label {

@@ -9,3 +9,6 @@ Gemfile.lock
 node_modules
 package.json
 favicon.ico
+
+# Original 71MB export. The web-encoded IROS_video_web.mp4 (4MB) is committed instead.
+figures/IROS_video.mp4

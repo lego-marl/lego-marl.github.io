@@ -9,7 +9,7 @@ authors:
 affiliations:
     Princeton University <br> <small>$^*$Equal contribution</small>
 paper: https://arxiv.org/abs/2509.14431
-video: https://arxiv.org/abs/2509.14431 # TODO: placeholder — replace with real video
+video: "#real-world-experiments"
 code: https://github.com/CAB-Lab-Princeton/LEGO-MARL
 # data: # TODO: add dataset link if released
 ---
@@ -86,19 +86,19 @@ Qualitative rollouts on the cooperative MPE Spread benchmark, where agents must 
         <div class="results-group-title">3 Agents, 3 Landmarks</div>
         <div class="results-grid">
             <div class="result-cell">
-                <img src="/figures/render_LEG-MAPPO_3agents.gif" alt="LEGO-MAPPO on MPE Spread with 3 agents and 3 landmarks">
+                <video src="/figures/render_LEG-MAPPO_3agents.mp4" autoplay loop muted playsinline aria-label="LEGO-MAPPO on MPE Spread with 3 agents and 3 landmarks"></video>
                 <div class="result-label">LEGO-MAPPO</div>
             </div>
             <div class="result-cell">
-                <img src="/figures/render_MAPPO_3agent.gif" alt="MAPPO on MPE Spread with 3 agents and 3 landmarks">
+                <video src="/figures/render_MAPPO_3agent.mp4" autoplay loop muted playsinline aria-label="MAPPO on MPE Spread with 3 agents and 3 landmarks"></video>
                 <div class="result-label">MAPPO<sup>[2]</sup></div>
             </div>
             <div class="result-cell">
-                <img src="/figures/render_pic_3agent.gif" alt="PIC on MPE Spread with 3 agents and 3 landmarks">
+                <video src="/figures/render_pic_3agent.mp4" autoplay loop muted playsinline aria-label="PIC on MPE Spread with 3 agents and 3 landmarks"></video>
                 <div class="result-label">PIC<sup>[3]</sup></div>
             </div>
             <div class="result-cell">
-                <img src="/figures/render_SEGNN_3agent.gif" alt="SEGNN on MPE Spread with 3 agents and 3 landmarks">
+                <video src="/figures/render_SEGNN_3agent.mp4" autoplay loop muted playsinline aria-label="SEGNN on MPE Spread with 3 agents and 3 landmarks"></video>
                 <div class="result-label">SEGNN<sup>[4]</sup></div>
             </div>
         </div>
@@ -107,19 +107,19 @@ Qualitative rollouts on the cooperative MPE Spread benchmark, where agents must 
         <div class="results-group-title">6 Agents, 6 Landmarks</div>
         <div class="results-grid">
             <div class="result-cell">
-                <img src="/figures/render_LEG-MAPPO_6agents.gif" alt="LEGO-MAPPO on MPE Spread with 6 agents and 6 landmarks">
+                <video src="/figures/render_LEG-MAPPO_6agents.mp4" autoplay loop muted playsinline aria-label="LEGO-MAPPO on MPE Spread with 6 agents and 6 landmarks"></video>
                 <div class="result-label">LEGO-MAPPO</div>
             </div>
             <div class="result-cell">
-                <img src="/figures/render_MAPPO_6agent.gif" alt="MAPPO on MPE Spread with 6 agents and 6 landmarks">
+                <video src="/figures/render_MAPPO_6agent.mp4" autoplay loop muted playsinline aria-label="MAPPO on MPE Spread with 6 agents and 6 landmarks"></video>
                 <div class="result-label">MAPPO<sup>[2]</sup></div>
             </div>
             <div class="result-cell">
-                <img src="/figures/render_pic_6agents.gif" alt="PIC on MPE Spread with 6 agents and 6 landmarks">
+                <video src="/figures/render_pic_6agents.mp4" autoplay loop muted playsinline aria-label="PIC on MPE Spread with 6 agents and 6 landmarks"></video>
                 <div class="result-label">PIC<sup>[3]</sup></div>
             </div>
             <div class="result-cell">
-                <img src="/figures/render_SEGNN_6agent.gif" alt="SEGNN on MPE Spread with 6 agents and 6 landmarks">
+                <video src="/figures/render_SEGNN_6agent.mp4" autoplay loop muted playsinline aria-label="SEGNN on MPE Spread with 6 agents and 6 landmarks"></video>
                 <div class="result-label">SEGNN<sup>[4]</sup></div>
             </div>
         </div>
@@ -141,11 +141,11 @@ Qualitative rollouts on the cooperative MPE Spread benchmark, where agents must 
 
 <div class="results-row cols-4 dividers">
     <div class="result-cell">
-        <img src="/figures/render_LEG-MAPPO_tag_ep2.gif" alt="LEGO-MAPPO on MPE Tag-occlusion">
+        <video src="/figures/render_LEG-MAPPO_tag_ep2.mp4" autoplay loop muted playsinline aria-label="LEGO-MAPPO on MPE Tag-occlusion"></video>
         <div class="result-label">LEGO-MAPPO</div>
     </div>
     <div class="result-cell">
-        <img src="/figures/render_MAPPO_tag_ep2.gif" alt="MAPPO on MPE Tag-occlusion">
+        <video src="/figures/render_MAPPO_tag_ep2.mp4" autoplay loop muted playsinline aria-label="MAPPO on MPE Tag-occlusion"></video>
         <div class="result-label">MAPPO</div>
     </div>
     <div class="result-cell">
@@ -153,7 +153,7 @@ Qualitative rollouts on the cooperative MPE Spread benchmark, where agents must 
         <div class="result-label">PIC</div>
     </div>
     <div class="result-cell">
-        <img src="/figures/render_SEGNN_tag_small.gif" alt="SEGNN on MPE Tag-occlusion">
+        <video src="/figures/render_SEGNN_tag_small.mp4" autoplay loop muted playsinline aria-label="SEGNN on MPE Tag-occlusion"></video>
         <div class="result-label">SEGNN</div>
     </div>
 </div>
@@ -164,19 +164,19 @@ Because LEGO is built on a graph neural network, it naturally handles a varying 
 
 <div class="results-row cols-4">
     <div class="result-cell">
-        <img src="/figures/render_generalization_4to2.gif" alt="LEGO-MAPPO trained on 4 agents, evaluated zero-shot on 2 agents">
+        <video src="/figures/render_generalization_4to2.mp4" autoplay loop muted playsinline aria-label="LEGO-MAPPO trained on 4 agents, evaluated zero-shot on 2 agents"></video>
         <div class="result-label">2 agents</div>
     </div>
     <div class="result-cell">
-        <img src="/figures/render_generalization_4to3.gif" alt="LEGO-MAPPO trained on 4 agents, evaluated zero-shot on 3 agents">
+        <video src="/figures/render_generalization_4to3.mp4" autoplay loop muted playsinline aria-label="LEGO-MAPPO trained on 4 agents, evaluated zero-shot on 3 agents"></video>
         <div class="result-label">3 agents</div>
     </div>
     <div class="result-cell">
-        <img src="/figures/render_generalization_4to5.gif" alt="LEGO-MAPPO trained on 4 agents, evaluated zero-shot on 5 agents">
+        <video src="/figures/render_generalization_4to5.mp4" autoplay loop muted playsinline aria-label="LEGO-MAPPO trained on 4 agents, evaluated zero-shot on 5 agents"></video>
         <div class="result-label">5 agents</div>
     </div>
     <div class="result-cell">
-        <img src="/figures/render_generalization_4to6.gif" alt="LEGO-MAPPO trained on 4 agents, evaluated zero-shot on 6 agents">
+        <video src="/figures/render_generalization_4to6.mp4" autoplay loop muted playsinline aria-label="LEGO-MAPPO trained on 4 agents, evaluated zero-shot on 6 agents"></video>
         <div class="result-label">6 agents</div>
     </div>
 </div>
@@ -187,24 +187,26 @@ LEGO's scalability also enables a curriculum: a policy trained on a smaller swar
 
 <div class="results-row cols-3">
     <div class="result-cell">
-        <img src="/figures/render_generalization_4to6_curr.gif" alt="LEGO-MAPPO pre-trained on 4 agents, then trained on 6 agents">
+        <video src="/figures/render_generalization_4to6_curr.mp4" autoplay loop muted playsinline aria-label="LEGO-MAPPO pre-trained on 4 agents, then trained on 6 agents"></video>
         <div class="result-label">6 agents</div>
     </div>
     <div class="result-cell">
-        <img src="/figures/render_generalization_4to7_curr.gif" alt="LEGO-MAPPO pre-trained on 4 agents, then trained on 7 agents">
+        <video src="/figures/render_generalization_4to7_curr.mp4" autoplay loop muted playsinline aria-label="LEGO-MAPPO pre-trained on 4 agents, then trained on 7 agents"></video>
         <div class="result-label">7 agents</div>
     </div>
     <div class="result-cell">
-        <img src="/figures/render_generalization_4to8_curr.gif" alt="LEGO-MAPPO pre-trained on 4 agents, then trained on 8 agents">
+        <video src="/figures/render_generalization_4to8_curr.mp4" autoplay loop muted playsinline aria-label="LEGO-MAPPO pre-trained on 4 agents, then trained on 8 agents"></video>
         <div class="result-label">8 agents</div>
     </div>
 </div>
 
 ### Real-World Experiments
 
-LEGO-MAPPO is deployed on Crazyflie drones, remaining robust to varying team sizes and to agents failing mid-flight.
+**Setup.** We demonstrate LEGO in the real world on the **Tag-occlusion** task with two pursuers, one evader, and two obstacles. All three agents are **Crazyflie 2.1+** nano drones, and each drone's position is tracked by its onboard IMU with Kalman filtering to construct the global state $X$. The policy is trained entirely in simulation and then deployed directly on hardware. Because a capture in the real world would mean an actual collision, the pursuers and the evader are assigned to fly at different altitudes, a drone is briefly paused when it approaches another too closely (to avoid downwash), and the physical obstacles are slightly smaller (0.1 m diameter) than those used during training.
 
-<!-- TODO: add the failure-experiment video here -->
+**Robustness to agent failure.** To show that zero-shot scalability translates into real-world robustness, we run a scenario with horizon $T=100$ in which **one pursuer deliberately breaks down and lands at $t=30$**. The remaining pursuer keeps chasing the evader, and the team stays functional despite the failure: although the "broken" pursuer is inactive, it still serves as a *roadblock* that prevents the evader from approaching its vicinity, while the surviving pursuer **switches its strategy from blocking the evader's path to directly chasing it**.
+
+<video class="demo-video" src="/figures/IROS_video_web.mp4" poster="/figures/IROS_video_poster.jpg" controls preload="metadata" playsinline></video>
 
 
 ## Citation
