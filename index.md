@@ -133,11 +133,79 @@ Qualitative rollouts on the cooperative MPE Spread benchmark, where agents must 
     [4] Chen et al. "E(3)-Equivariant Actor-Critic Methods for Cooperative Multi-Agent Reinforcement Learning." <i>ICML</i> 2024.
 </div>
 
-### Other results
+### Competitive Tasks: MPE Tag-occlusion
 
-- Outperforms strong baselines on the **competitive** MPE Tag pursuer–evader benchmark.
-- **Zero-shot** transfer to team sizes never seen during training.
-- Robustness to **agent failure** and varying team sizes in **real-world** Crazyflie drone flights.
+<div class="results-subtitle">
+    2 <span style="background-color:#9A97BE; color:#000; padding:0.1em 0.35em; border-radius:0.25em;">evaders</span> chased by 3 slower <span style="background-color:#D59796; color:#000; padding:0.1em 0.35em; border-radius:0.25em;">pursuers</span>
+</div>
+
+<div class="results-row cols-4 dividers">
+    <div class="result-cell">
+        <img src="/figures/render_LEG-MAPPO_tag_ep2.gif" alt="LEGO-MAPPO on MPE Tag-occlusion">
+        <div class="result-label">LEGO-MAPPO</div>
+    </div>
+    <div class="result-cell">
+        <img src="/figures/render_MAPPO_tag_ep2.gif" alt="MAPPO on MPE Tag-occlusion">
+        <div class="result-label">MAPPO</div>
+    </div>
+    <div class="result-cell">
+        <div class="result-placeholder">Coming soon</div>
+        <div class="result-label">PIC</div>
+    </div>
+    <div class="result-cell">
+        <img src="/figures/render_SEGNN_tag_small.gif" alt="SEGNN on MPE Tag-occlusion">
+        <div class="result-label">SEGNN</div>
+    </div>
+</div>
+
+### Zero-shot Scalability
+
+Because LEGO is built on a graph neural network, it naturally handles a varying number of input nodes, so a policy trained at one team size can be applied directly to another. We train LEGO-MAPPO on MPE Spread with **4 agents and 4 landmarks**, then evaluate that same policy — with no retraining or fine-tuning — on systems with **2, 3, 5, and 6 agents**.
+
+<div class="results-row cols-4">
+    <div class="result-cell">
+        <img src="/figures/render_generalization_4to2.gif" alt="LEGO-MAPPO trained on 4 agents, evaluated zero-shot on 2 agents">
+        <div class="result-label">2 agents</div>
+    </div>
+    <div class="result-cell">
+        <img src="/figures/render_generalization_4to3.gif" alt="LEGO-MAPPO trained on 4 agents, evaluated zero-shot on 3 agents">
+        <div class="result-label">3 agents</div>
+    </div>
+    <div class="result-cell">
+        <img src="/figures/render_generalization_4to5.gif" alt="LEGO-MAPPO trained on 4 agents, evaluated zero-shot on 5 agents">
+        <div class="result-label">5 agents</div>
+    </div>
+    <div class="result-cell">
+        <img src="/figures/render_generalization_4to6.gif" alt="LEGO-MAPPO trained on 4 agents, evaluated zero-shot on 6 agents">
+        <div class="result-label">6 agents</div>
+    </div>
+</div>
+
+### Curriculum Learning
+
+LEGO's scalability also enables a curriculum: a policy trained on a smaller swarm serves as a warm start for a larger, harder configuration. Here LEGO-MAPPO is **pre-trained on the 4-agent system** and then trained on the target systems of **6, 7, and 8 agents**.
+
+<div class="results-row cols-3">
+    <div class="result-cell">
+        <img src="/figures/render_generalization_4to6_curr.gif" alt="LEGO-MAPPO pre-trained on 4 agents, then trained on 6 agents">
+        <div class="result-label">6 agents</div>
+    </div>
+    <div class="result-cell">
+        <img src="/figures/render_generalization_4to7_curr.gif" alt="LEGO-MAPPO pre-trained on 4 agents, then trained on 7 agents">
+        <div class="result-label">7 agents</div>
+    </div>
+    <div class="result-cell">
+        <img src="/figures/render_generalization_4to8_curr.gif" alt="LEGO-MAPPO pre-trained on 4 agents, then trained on 8 agents">
+        <div class="result-label">8 agents</div>
+    </div>
+</div>
+
+### Real-World Experiments
+
+LEGO-MAPPO is deployed on Crazyflie drones, remaining robust to varying team sizes and to agents failing mid-flight.
+
+<!-- TODO: add the failure-experiment video here -->
+
 
 ## Citation
 

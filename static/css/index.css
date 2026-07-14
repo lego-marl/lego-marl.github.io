@@ -222,3 +222,44 @@ body {
         padding-top: 1.5rem;
     }
 }
+
+/* ---- Results: single-row panel strips ---- */
+.results-subtitle {
+    text-align: center;
+    margin-bottom: 1.1rem;
+}
+
+.results-row {
+    display: grid;
+    gap: 0.9rem;
+    align-items: end;
+}
+
+.results-row.cols-4 { grid-template-columns: repeat(4, 1fr); }
+.results-row.cols-3 { grid-template-columns: repeat(3, 1fr); }
+
+.results-row.dividers { gap: 0; }
+.results-row.dividers .result-cell { padding: 0 0.7rem; }
+.results-row.dividers .result-cell + .result-cell { border-left: 1px solid #cfcfcf; }
+
+.result-placeholder {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 1px dashed #dcdcdc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bbb;
+    font-size: 0.85rem;
+}
+
+@media screen and (max-width: 768px) {
+    .results-row.cols-4,
+    .results-row.cols-3 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.9rem;
+    }
+    .results-row.dividers .result-cell { padding: 0; }
+    .results-row.dividers .result-cell + .result-cell { border-left: none; }
+}
