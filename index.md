@@ -9,7 +9,7 @@ authors:
 affiliations:
     Princeton University <br> <small>$^*$Equal contribution</small>
 paper: https://arxiv.org/abs/2509.14431
-video: "#real-world-experiments"
+# video: # TODO: add the YouTube link here, then uncomment to show the Video button
 code: https://github.com/CAB-Lab-Princeton/LEGO-MARL
 # data: # TODO: add dataset link if released
 ---
@@ -153,7 +153,7 @@ Qualitative rollouts on the cooperative MPE Spread benchmark, where agents must 
         <div class="result-label">PIC</div>
     </div>
     <div class="result-cell">
-        <video src="/figures/render_SEGNN_tag_small.mp4" autoplay loop muted playsinline aria-label="SEGNN on MPE Tag-occlusion"></video>
+        <video src="/figures/render_SEGNN_tag_scaled.mp4" autoplay loop muted playsinline aria-label="SEGNN on MPE Tag-occlusion"></video>
         <div class="result-label">SEGNN</div>
     </div>
 </div>
@@ -201,8 +201,6 @@ LEGO's scalability also enables a curriculum: a policy trained on a smaller swar
 </div>
 
 ### Real-World Experiments
-
-**Setup.** We demonstrate LEGO in the real world on the **Tag-occlusion** task with two pursuers, one evader, and two obstacles. All three agents are **Crazyflie 2.1+** nano drones, and each drone's position is tracked by its onboard IMU with Kalman filtering to construct the global state $X$. The policy is trained entirely in simulation and then deployed directly on hardware. Because a capture in the real world would mean an actual collision, the pursuers and the evader are assigned to fly at different altitudes, a drone is briefly paused when it approaches another too closely (to avoid downwash), and the physical obstacles are slightly smaller (0.1 m diameter) than those used during training.
 
 **Robustness to agent failure.** To show that zero-shot scalability translates into real-world robustness, we run a scenario with horizon $T=100$ in which **one pursuer deliberately breaks down and lands at $t=30$**. The remaining pursuer keeps chasing the evader, and the team stays functional despite the failure: although the "broken" pursuer is inactive, it still serves as a *roadblock* that prevents the evader from approaching its vicinity, while the surviving pursuer **switches its strategy from blocking the evader's path to directly chasing it**.
 
