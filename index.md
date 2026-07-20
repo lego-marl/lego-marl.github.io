@@ -149,7 +149,7 @@ Qualitative rollouts on the cooperative MPE Spread benchmark, where agents must 
         <div class="result-label">MAPPO</div>
     </div>
     <div class="result-cell">
-        <div class="result-placeholder">Coming soon</div>
+        <video src="/figures/render_pic_tag_ep2.mp4" autoplay loop muted playsinline aria-label="PIC on MPE Tag-occlusion"></video>
         <div class="result-label">PIC</div>
     </div>
     <div class="result-cell">
